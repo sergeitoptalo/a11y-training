@@ -1,0 +1,71 @@
+.navbar .navbar-item a:focus,
+.navbar .navbar-item a.button:focus {
+    outline: 0;
+    -webkit-box-shadow: 0px 0px 1px 2px #D6F1FF;
+    -moz-box-shadow: 0px 0px 1px 2px #D6F1FF;
+    box-shadow: 0px 0px 1px 2px #D6F1FF;
+}
+
+.hero-body .box input:focus,
+.hero-body .box button:focus,
+.hero-body .box button.button:focus,
+.about-us a:focus,
+.tile a.button:focus {
+    outline: 0;
+    -webkit-box-shadow: 0px 0px 1px 2px #003B75;
+    -moz-box-shadow: 0px 0px 1px 2px #003B75;
+    box-shadow: 0px 0px 1px 2px #003B75;
+    /* border-radius: 2px; */
+  /*   border: 3px solid #003D7A; */
+    /* box-sizing: border-box; */
+}
+
+body .button.is-info {
+    background: #0A5485;
+}
+
+body .subtitle {
+    color: #363636;
+}
+
+body .hero.is-info {
+    background: #0A5485;
+}
+
+html body .topics-section .hero.is-info .tabs.is-boxed ul li {
+    padding-top: 2px;
+}
+
+html body .topics-section .hero.is-info .tabs.is-boxed .is-active button {
+    color: #0A5485;
+    background: #fff;
+}
+
+html body .topics-section .hero.is-info .tabs.is-boxed button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1px;
+    padding: .5em 1em;
+    vertical-align: top;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+html body .topics-section .hero.is-info .tabs.is-boxed button:focus {
+    outline: 0;
+    -webkit-box-shadow: 0px 0px 1px 2px #E5F7FF;
+    -moz-box-shadow: 0px 0px 1px 2px #E5F7FF;
+    box-shadow: 0px 0px 1px 2px #E5F7FF;
+}
+
+.card .card-content button.button:focus {
+    outline: 0;
+    -webkit-box-shadow: 0px 0px 1px 2px #003B75;
+    -moz-box-shadow: 0px 0px 1px 2px #003B75;
+    box-shadow: 0px 0px 1px 2px #003B75;
+}
