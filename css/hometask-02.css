@@ -25,7 +25,7 @@ body .button.is-info {
 }
 
 body .subtitle {
-    color: #363636;
+    color: #212121;
 }
 
 body .hero.is-info {
@@ -68,4 +68,48 @@ html body .topics-section .hero.is-info .tabs.is-boxed button:focus {
     -webkit-box-shadow: 0px 0px 1px 2px #003B75;
     -moz-box-shadow: 0px 0px 1px 2px #003B75;
     box-shadow: 0px 0px 1px 2px #003B75;
+}
+
+body .container .tag.is-danger {
+    background: #FF6685;
+    color: #000;
+}
+
+.container .tag.is-primary {
+    background: #00E6C3;
+    color: #000;
+}
+
+.container .tag.is-success {
+    color: #000;
+}
+
+.container .help.is-success {
+    color: #10652E;
+}
+
+.container .help.is-danger {
+    color: #A80022;
+}
+
+.footer .columns a,
+.footer .content a,
+.section .content a,
+.container .content a,
+.container form a,
+.card a.card-footer-item {
+    color: #1D53AA;
+}
+
+button.button.is-link,
+.container .tag.is-link {
+    background: #1B4FA1;
+}
+
+.container .has-text-grey-light {
+    color: #525252 !important;
+}
+
+.hero.is-info .container .subtitle {
+    color: rgba(255, 255, 255, 1);
 }
