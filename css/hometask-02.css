@@ -1,95 +1,105 @@
 .navbar .navbar-item a:focus,
-.navbar .navbar-item a.button:focus {
-    outline: 0;
-    -webkit-box-shadow: 0px 0px 1px 2px #D6F1FF;
-    -moz-box-shadow: 0px 0px 1px 2px #D6F1FF;
-    box-shadow: 0px 0px 1px 2px #D6F1FF;
+.navbar .navbar-item a.button:focus,
+.navbar .logo-link:focus,
+html body .topics-section .hero.is-info .tabs.is-boxed button:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 1px 2px #ffff80;
+  -moz-box-shadow: 0px 0px 1px 2px #ffff80;
+  box-shadow: 0px 0px 1px 2px #ffff80;
 }
 
 .hero-body .box input:focus,
 .hero-body .box button:focus,
 .hero-body .box button.button:focus,
 .about-us a:focus,
-.tile a.button:focus {
-    outline: 0;
-    -webkit-box-shadow: 0px 0px 1px 2px #003B75;
-    -moz-box-shadow: 0px 0px 1px 2px #003B75;
-    box-shadow: 0px 0px 1px 2px #003B75;
-    /* border-radius: 2px; */
-  /*   border: 3px solid #003D7A; */
-    /* box-sizing: border-box; */
+.tile a.button:focus,
+.columns a:focus,
+.columns .column a.button:focus,
+.container a.box:focus,
+.container input:focus,
+.container input.input:focus,
+.container .select select:focus,
+.container textarea:focus,
+.container form a:focus,
+.container form button.button:focus,
+.container form button.button.is-link:focus,
+.footer .container a:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 1px 2px #003b75;
+  -moz-box-shadow: 0px 0px 1px 2px #003b75;
+  box-shadow: 0px 0px 1px 2px #003b75;
 }
 
 body .button.is-info {
-    background: #0A5485;
+  background: #0a5485;
 }
 
 body .subtitle {
-    color: #212121;
+  color: #212121;
 }
 
 body .hero.is-info {
-    background: #0A5485;
+  background: #0a5485;
 }
 
 html body .topics-section .hero.is-info .tabs.is-boxed ul li {
-    padding-top: 2px;
+  padding-top: 2px;
 }
 
 html body .topics-section .hero.is-info .tabs.is-boxed .is-active button {
-    color: #0A5485;
-    background: #fff;
+  color: #0a5485;
+  background: #fff;
 }
 
 html body .topics-section .hero.is-info .tabs.is-boxed button {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -1px;
-    padding: .5em 1em;
-    vertical-align: top;
-    border: 1px solid transparent;
-    border-radius: 4px 4px 0 0;
-    font-size: 16px;
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: 0.5em 1em;
+  vertical-align: top;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  font-size: 16px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
 }
 
-html body .topics-section .hero.is-info .tabs.is-boxed button:focus {
+/* html body .topics-section .hero.is-info .tabs.is-boxed button:focus {
     outline: 0;
     -webkit-box-shadow: 0px 0px 1px 2px #E5F7FF;
     -moz-box-shadow: 0px 0px 1px 2px #E5F7FF;
     box-shadow: 0px 0px 1px 2px #E5F7FF;
-}
+} */
 
 .card .card-content button.button:focus {
-    outline: 0;
-    -webkit-box-shadow: 0px 0px 1px 2px #003B75;
-    -moz-box-shadow: 0px 0px 1px 2px #003B75;
-    box-shadow: 0px 0px 1px 2px #003B75;
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 1px 2px #003b75;
+  -moz-box-shadow: 0px 0px 1px 2px #003b75;
+  box-shadow: 0px 0px 1px 2px #003b75;
 }
 
 body .container .tag.is-danger {
-    background: #FF6685;
-    color: #000;
+  background: #ff6685;
+  color: #000;
 }
 
 .container .tag.is-primary {
-    background: #00E6C3;
-    color: #000;
+  background: #00e6c3;
+  color: #000;
 }
 
 .container .tag.is-success {
-    color: #000;
+  color: #000;
 }
 
 .container .help.is-success {
-    color: #10652E;
+  color: #10652e;
 }
 
 .container .help.is-danger {
-    color: #A80022;
+  color: #a80022;
 }
 
 .footer .columns a,
@@ -98,18 +108,26 @@ body .container .tag.is-danger {
 .container .content a,
 .container form a,
 .card a.card-footer-item {
-    color: #1D53AA;
+  color: #1d53aa;
 }
 
 button.button.is-link,
 .container .tag.is-link {
-    background: #1B4FA1;
+  background: #1b4fa1;
 }
 
 .container .has-text-grey-light {
-    color: #525252 !important;
+  color: #525252 !important;
 }
 
 .hero.is-info .container .subtitle {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.external-link:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f35d";
+  display: block;
+  margin-left: 10px;
 }

@@ -20,7 +20,7 @@
         <div class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item logo-link">
+              <a href="#" class="navbar-item logo-link">
                 <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" />
               </a>
               <span class="navbar-burger burger" data-target="navbarMenu">
@@ -199,9 +199,10 @@
             vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.
           </p>
           <table>
+            <caption>Table header</caption>
             <tr>
-              <td>Header</td>
-              <td>Header</td>
+              <th scope="col">Header</th>
+              <th scope="col">Header</th>
             </tr>
             <tr>
               <td>cell</td>
@@ -549,7 +550,7 @@
                 </div>
                 <p class="title">New York</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <a href="#" class="button">Buy Tickets</a>
+                <a href="#" class="button external-link" target="_blank" title="the page will open in a new tab">Buy Tickets</a>
               </div>
             </div>
             <div class="tile is-parent">
@@ -559,7 +560,7 @@
                 </div>
                 <p class="title">Los Angeles</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <a href="#" class="button">Buy Tickets</a>
+                <a href="#" class="button external-link" target="_blank" title="the page will open in a new tab">Buy Tickets</a>
               </div>
             </div>
             <div class="tile is-parent">
@@ -569,7 +570,7 @@
                 </div>
                 <p class="title">Mexico</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <a href="#" class="button">Buy Tickets</a>
+                <a href="#" class="button external-link" target="_blank" title="the page will open in a new tab">Buy Tickets</a>
               </div>
             </div>
           </div>
@@ -582,7 +583,7 @@
                 </div>
                 <p class="title">Paris</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <a href="#" class="button">Buy Tickets</a>
+                <a href="#" class="button external-link" target="_blank" title="the page will open in a new tab">Buy Tickets</a>
               </div>
             </div>
             <div class="tile is-parent">
@@ -592,7 +593,7 @@
                 </div>
                 <p class="title">Minsk</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <a href="#" class="button">Buy Tickets</a>
+                <a href="#" class="button external-link" target="_blank" title="the page will open in a new tab">Buy Tickets</a>
               </div>
             </div>
             <div class="tile is-parent">
@@ -602,7 +603,7 @@
                 </div>
                 <p class="title">London</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
-                <a href="#" class="button">Buy Tickets</a>
+                <a href="#" class="button external-link" target="_blank" title="the page will open in a new tab">Buy Tickets</a>
               </div>
             </div>
           </div>
@@ -993,16 +994,15 @@
           </div>
         </div>
       </section>
-      -->
 
-      <section class="section has-background-light" aria-labelledby="contact-us-title">
+      <section class="section has-background-light">
         <div class="container">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2" id="contact-us-title">Contact us</h2>
             <div class="subtitle is-5">Don't hesitate, ask anything</div>
           </div>
 
-          <form class="column is-half is-offset-one-quarter box">
+          <form class="column is-half is-offset-one-quarter box" aria-labelledby="contact-us-title">
             <div class="field">
               <label class="label">Name</label>
               <div class="control">
@@ -1069,11 +1069,11 @@
             <div class="field">
               <div class="control">
                 <label class="radio">
-                  <input type="radio" name="question" />
+                  <input type="radio" name="yes" />
                   Yes
                 </label>
                 <label class="radio">
-                  <input type="radio" name="question" />
+                  <input type="radio" name="no" />
                   No
                 </label>
               </div>
