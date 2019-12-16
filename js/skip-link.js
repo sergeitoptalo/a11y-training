@@ -25,6 +25,7 @@ function openSkipOptions(event) {
             clearData();
         } else {
             skipLinkPanel.classList.add('expanded');
+            skipLinkTrigger.setAttribute('aria-expanded', true);
             opened = true;
             skipToItems = skipLinkPanel.querySelectorAll('a');
         }
@@ -52,6 +53,7 @@ function openSkipOptions(event) {
 
     function clearData() {
         skipLinkPanel.classList.remove('expanded');
+        skipLinkTrigger.setAttribute('aria-expanded', false);
         opened = false;
         order = 0;
     }

@@ -1,3 +1,7 @@
+a {
+  text-decoration: underline !important;
+}
+
 .navbar .navbar-item a:focus,
 .navbar .navbar-item a.button:focus,
 .navbar .logo-link:focus,
@@ -108,7 +112,8 @@ body .container .tag.is-danger {
 .container .content a,
 .container form a,
 .card a.card-footer-item,
-.skip-link-panel.expanded a {
+.skip-link-panel.expanded a,
+nav.breadcrumb a {
   color: #1d53aa;
 }
 
@@ -140,12 +145,8 @@ button.button.is-link,
 
 .skip-link-trigger {
   position: absolute;
-  top: -30px;
+  top: 10px;
   left: 20px;
-}
-
-.skip-link-trigger:focus {
-  top: 0;
 }
 
 .skip-link-panel {
@@ -165,5 +166,21 @@ button.button.is-link,
 
 nav.breadcrumb {
   padding: 20px;
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+}
+
+.visuallyhidden:focus {
+  height: auto;
+  width: auto;
+  clip: auto;
 }
 
