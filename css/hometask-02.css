@@ -107,7 +107,8 @@ body .container .tag.is-danger {
 .section .content a,
 .container .content a,
 .container form a,
-.card a.card-footer-item {
+.card a.card-footer-item,
+.skip-link-panel.expanded a {
   color: #1d53aa;
 }
 
@@ -131,3 +132,38 @@ button.button.is-link,
   display: block;
   margin-left: 10px;
 }
+
+.skip-link {
+  position: relative;
+  top: 0;
+}
+
+.skip-link-trigger {
+  position: absolute;
+  top: -30px;
+  left: 20px;
+}
+
+.skip-link-trigger:focus {
+  top: 0;
+}
+
+.skip-link-panel {
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  position: absolute;
+  display: none;
+  top: 30px;
+  left: 20px;
+  z-index: 100;
+}
+
+.skip-link-panel.expanded {
+  display: block;
+}
+
+nav.breadcrumb {
+  padding: 20px;
+}
+

@@ -16,6 +16,34 @@
 
   <body>
     <div class="hero hero-bg is-fullheight">
+      <div class="skip-link" id="skip-link-container">
+        <button id="skip-link-trigger" data-target-selector="#skip-link-panel" class="skip-link-trigger" aria-haspopup="true">Skip to:</button>
+        <div class="skip-link-panel" id="skip-link-panel">
+          <ul role="menu">
+            <li>
+              <a href="#upcoming-events">About us</a>
+            </li>
+            <li>
+              <a href="#key-features">Key features</a>
+            </li>
+            <li>
+              <a href="#topics-list">List of topics</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#photos">Photos from past events</a>
+            </li>
+            <li>
+              <a href="#forum">Forum</a>
+            </li>
+            <li>
+              <a href="#contacts">Contact us</a>
+            </li>
+          </ulmenu>
+        </div></div>
+      
       <header class="hero-head">
         <div class="navbar">
           <div class="container">
@@ -33,7 +61,7 @@
             <nav id="navbarMenu" class="navbar-menu">
               <div class="navbar-end">
                 <span class="navbar-item">
-                  <a href="#" class="button is-white is-outlined">
+                  <a href="#upcoming-events" class="button is-white is-outlined">
                     <span class="icon">
                       <i class="fa fa-home"></i>
                     </span>
@@ -94,7 +122,20 @@
       </div>
     </div>
     <main>
-      <section class="section about-us" id="about" aria-labelledby="about-us-title">
+      <nav class="breadcrumb">
+        <ol>
+          <li>
+            <a href="#">Examples</a>
+          </li>
+          <li>
+            <a href="#">Accessibility</a>
+          </li>
+          <li>
+            <a href="#" aria-current="page">Breadcrumb example</a>
+          </li>
+        </ol>
+      </nav>
+      <section class="section about-us" id="about" aria-labelledby="about-us-title" id="about-us">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2" id="about-us-title">About Us</h2>
           <div class="subtitle is-5">We of all trades, master of "some"</div>
@@ -261,7 +302,7 @@
         </div>
       </section>
 
-      <section class="hero has-background-grey-light" aria-labelledby="features-title">
+      <section class="hero has-background-grey-light" aria-labelledby="features-title" id="key-features">
         <div class="container features">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2" id="features-title">Three key features</h2>
@@ -328,7 +369,7 @@
           </div>
         </div>
       </section>
-      <section aria-labelledby="topics-title" class="topics-section">
+      <section aria-labelledby="topics-title" class="topics-section" id="topics-list">
         <div class="hero is-info">
           <div class="hero-body">
             <div class="container">
@@ -528,7 +569,7 @@
         </div>
       </section>
 
-      <section class="section has-background-grey-lighter" aria-labelledby="upcoming-events-title">
+      <section class="section has-background-grey-lighter" aria-labelledby="upcoming-events-title" id="upcoming-events">
         <div class="container has-text-centered">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2" id="upcoming-events-title">
@@ -610,7 +651,7 @@
         </div>
       </section>
 
-      <section class="section" aria-labelledby="services-title">
+      <section class="section" aria-labelledby="services-title" id="services">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2" id="services-title">Services</h2>
           <div class="subtitle is-5">What can I do for you?</div>
@@ -658,10 +699,10 @@
         </div>
       </section>
 
-      <div class="section has-background-grey-lighter">
+      <section class="section has-background-grey-lighter" id="photos" aria-labelledby="photos-title">
         <div class="container">
           <div class="section-heading has-text-centered">
-            <div class="title is-2">Photos from past events</div>
+            <h3 class="title is-2" id="photos-title">Photos from past events</h3>
           </div>
 
           <div class="container portfolio-container">
@@ -821,8 +862,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <section class="section" aria-labelledby="forum-title">
+      </section>
+      <section class="section" aria-labelledby="forum-title" id="forum">
         <div class="container">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2" id="forum-title">Forum</h2>
@@ -995,7 +1036,7 @@
         </div>
       </section>
 
-      <section class="section has-background-light">
+      <section class="section has-background-light" id="contacts">
         <div class="container">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2" id="contact-us-title">Contact us</h2>
@@ -1315,5 +1356,6 @@
 
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
     <script async src="js/custom.js"></script>
+    <script async src="js/skip-link.js"></script>
   </body>
 </html>
