@@ -1066,7 +1066,7 @@
                   </span>
                 </div>
               </label>
-              <p class="help is-success">This username is available</p>
+              <p class="help is-success" role="status">This username is available</p>
             </div>
 
             <div class="field">
@@ -1081,7 +1081,7 @@
                   </span>
                 </div>
               </label>
-              <p class="help is-danger">This email is invalid</p>
+              <p class="help is-danger" role="alert">This email is invalid</p>
             </div>
 
             <div class="field">
@@ -1196,6 +1196,7 @@
         </div>
         <button class="modal-close is-large" aria-label="Close modal"></button>
       </div>
+      <div id="updates-screen"></div>
     </main>
     <!-- <div class="section">
     <div class="container">
@@ -1362,5 +1363,6 @@
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
     <script async src="js/custom.js"></script>
     <script async src="js/skip-link.js"></script>
+    <script async src="js/aria-live.js"></script>
   </body>
 </html>

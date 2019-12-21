@@ -193,3 +193,11 @@ button.navbar-burger.burger {
 button.navbar-burger.burger span {
   background-color: #fff;
 }
+
+#updates-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+/*   height: 30px;
+  width: 50px; */
+}
