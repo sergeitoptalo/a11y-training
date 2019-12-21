@@ -16,7 +16,9 @@
 
   <body>
     <div class="hero hero-bg is-fullheight">
-      <div class="skip-link" id="skip-link-container">
+      <section id="skip-link-container" class="skip-link" aria-label="skip links">
+        <a href="#main" class="visuallyhidden" aria-describedby="skip-links-description">Skip to main content</a>
+        <span id="skip-links-description" class="visuallyhidden">you can skip navigation and go to the main content of the page or click on the tab and select the section to go</span>
         <button id="skip-link-trigger" data-target-selector="#skip-link-panel" class="skip-link-trigger visuallyhidden" aria-haspopup="true">Skip to:</button>
         <div class="skip-link-panel" id="skip-link-panel">
           <ul role="menu">
@@ -42,7 +44,8 @@
               <a href="#contacts">Contact us</a>
             </li>
           </ulmenu>
-        </div></div>
+        </div>
+      </section>
       
       <header class="hero-head">
         <div class="navbar">
@@ -58,12 +61,12 @@
               </span>
             </div>
 
-            <nav id="navbarMenu" class="navbar-menu">
+            <nav id="navbarMenu" class="navbar-menu" aria-label="site sections navigation">
               <div class="navbar-end">
                 <span class="navbar-item">
                   <a href="#upcoming-events" class="button is-white is-outlined">
                     <span class="icon">
-                      <i class="fa fa-home"></i>
+                      <span class="fa fa-home" aria-hidden="true"></span>
                     </span>
                     <span>Home</span>
                   </a>
@@ -71,7 +74,7 @@
                 <span class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
                     <span class="icon">
-                      <i class="fab fa-superpowers"></i>
+                      <span class="fab fa-superpowers" aria-hidden="true"></span>
                     </span>
                     <span>Examples</span>
                   </a>
@@ -79,7 +82,7 @@
                 <span class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
                     <span class="icon">
-                      <i class="fa fa-book"></i>
+                      <span class="fa fa-book" aria-hidden="true"></span>
                     </span>
                     <span>Documentation</span>
                   </a>
@@ -87,7 +90,7 @@
                 <span class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
                     <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <span class="fab fa-github" aria-hidden="true"></span>
                     </span>
                     <span>View Source</span>
                   </a>
@@ -98,7 +101,7 @@
         </div>
       </header>
 
-      <div class="hero-body">
+      <section class="hero-body" aria-label="subscribe to notifications">
         <div class="container has-text-centered">
           <div class="column is-6 is-offset-3">
             <h1 class="title has-text-white">
@@ -119,10 +122,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-    <main>
-      <nav class="breadcrumb">
+    <main id="main">
+      <nav class="breadcrumb" aria-label="breadcrumb navigation">
         <ol>
           <li>
             <a href="#">Examples</a>
@@ -313,7 +316,7 @@
             <div class="column is-4">
               <div class="card is-shady">
                 <div class="card-image has-text-centered">
-                  <i class="fa fa-paw"></i>
+                  <span class="fa fa-paw" aria-hidden="true"></span>
                 </div>
                 <div class="card-content">
                   <div class="content">
@@ -332,7 +335,7 @@
             <div class="column is-4">
               <div class="card is-shady">
                 <div class="card-image has-text-centered">
-                  <i class="fab fa-empire"></i>
+                  <span class="fab fa-empire" aria-hidden="true"></span>
                 </div>
                 <div class="card-content">
                   <div class="content">
@@ -351,7 +354,7 @@
             <div class="column is-4">
               <div class="card is-shady">
                 <div class="card-image has-text-centered">
-                  <i class="fab fa-apple"></i>
+                  <span class="fab fa-apple" aria-hidden="true"></span>
                 </div>
                 <div class="card-content">
                   <div class="content">
@@ -383,19 +386,19 @@
             <ul role="tablist">
               <li>
                 <button data-target="pane-1" id="1" class="tab-control is-active" role="tab" aria-controls="pane-1" aria-selected="true">
-                  <span class="icon is-small"><i class="fa fa-image"></i></span>
+                  <span class="icon is-small"><span class="fa fa-image" aria-hidden="true"></span></span>
                   <span id="pictures-tab-title">Pictures</span>
                 </button>
               </li>
               <li>
                 <button data-target="pane-3" id="3" class="tab-control" role="tab" aria-controls="pane-3" aria-selected="false">
-                  <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+                  <span class="icon is-small"><span class="fab fa-superpowers" aria-hidden="true"></span></span>
                   <span id="team-tab-title">Team</span>
                 </button
               </li>
               <li>
                 <button data-target="pane-4" id="4" class="tab-control" role="tab" aria-controls="pane-4" aria-selected="false">
-                  <span class="icon is-small"><i class="fa fa-film"></i></span>
+                  <span class="icon is-small"><span class="fa fa-film" aria-hidden="true"></span></span>
                   <span id="video-tab-title">Video</span>
                 </button>
               </li>
@@ -427,7 +430,7 @@
                           Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut
                           consequat semper viverra nam.
                         </p>
-                        <button class="button is-link modal-button" data-target="modal-image1">Image modal</button>
+                        <button id="m1" class="button is-link modal-button" data-target="modal-image1">Image modal</button>
                       </div>
                     </div>
                   </div>
@@ -486,7 +489,7 @@
               <div class="column">
                 <div class="media">
                   <div class="media-left">
-                    <i class="fab fa-github-square fa-4x"></i>
+                    <span class="fab fa-github-square fa-4x" aria-hidden="true"></span>
                   </div>
                   <div class="media-content">
                     <div class="content">
@@ -501,7 +504,7 @@
                 </div>
                 <div class="media">
                   <div class="media-left">
-                    <i class="fab fa-empire fa-4x"></i>
+                    <span class="fab fa-empire fa-4x" aria-hidden="true"></span>
                   </div>
                   <div class="media-content">
                     <div class="content">
@@ -518,7 +521,7 @@
               <div class="column">
                 <div class="media">
                   <div class="media-left">
-                    <i class="fab fa-ravelry fa-4x"></i>
+                    <span class="fab fa-ravelry fa-4x" aria-hidden="true"></span>
                   </div>
                   <div class="media-content">
                     <div class="content">
@@ -533,7 +536,7 @@
                 </div>
                 <div class="media">
                   <div class="media-left">
-                    <i class="fab fa-github-alt fa-4x"></i>
+                    <span class="fab fa-github-alt fa-4x" aria-hidden="true"></span>
                   </div>
                   <div class="media-content">
                     <div class="content">
@@ -557,7 +560,6 @@
                 <div class="embed-container image">
                   <iframe
                     src="https://player.vimeo.com/video/261794608"
-                    frameborder="0"
                     webkitAllowFullScreen
                     mozallowfullscreen
                     allowfullscreen
@@ -597,7 +599,7 @@
             <div class="tile is-parent">
               <div class="tile is-child box">
                 <div class="image">
-                  <img src="./img/access.jpg" />
+                  <img src="./img/access.jpg" alt="conference for people with disabilities" />
                 </div>
                 <p class="title">Los Angeles</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
@@ -607,7 +609,7 @@
             <div class="tile is-parent">
               <div class="tile is-child box">
                 <div class="image">
-                  <img src="./img/dotcss-2019.jpg" />
+                  <img src="./img/dotcss-2019.jpg" alt="dot css logo" />
                 </div>
                 <p class="title">Mexico</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
@@ -620,7 +622,7 @@
             <div class="tile is-parent">
               <div class="tile is-child box">
                 <div class="image">
-                  <img src="./img/images.jpg" />
+                  <img src="./img/images.jpg" alt="access accessibility logo" />
                 </div>
                 <p class="title">Paris</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
@@ -630,7 +632,7 @@
             <div class="tile is-parent">
               <div class="tile is-child box">
                 <div class="image">
-                  <img src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png" />
+                  <img src="./img/mid_300_33455472_313632022502906_5761920685983137792_n.png" alt="css minsk js logo" />
                 </div>
                 <p class="title">Minsk</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
@@ -640,7 +642,7 @@
             <div class="tile is-parent">
               <div class="tile is-child box">
                 <div class="image">
-                  <img src="./img/access.jpg" />
+                  <img src="./img/access.jpg" alt="event for people with disabilities" />
                 </div>
                 <p class="title">London</p>
                 <p class="subtitle">Fri 27 Nov 2016</p>
@@ -900,7 +902,7 @@
                   <div class="media">
                     <div class="media-left">
                       <p class="image is-32x32">
-                        <img src="https://source.unsplash.com/random/64x64/?sig=300" />
+                        <img src="https://source.unsplash.com/random/64x64/?sig=300" alt="jsmith photo" />
                       </p>
                     </div>
                     <div class="media-content">
@@ -912,7 +914,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+                      <span class="has-text-grey-light"><span class="fa fa-comments" aria-hidden="true"></span> 1</span>
                     </div>
                   </div>
                 </div>
@@ -922,7 +924,7 @@
                   <div class="media">
                     <div class="media-left">
                       <p class="image is-32x32">
-                        <img src="https://source.unsplash.com/random/64x64/?sig=301" />
+                        <img src="https://source.unsplash.com/random/64x64/?sig=301" alt="red photo/>
                       </p>
                     </div>
                     <div class="media-content">
@@ -934,7 +936,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+                      <span class="has-text-grey-light"><span class="fa fa-comments" aria-hidden="true"></span> 0</span>
                     </div>
                   </div>
                 </div>
@@ -946,7 +948,7 @@
                   <div class="media">
                     <div class="media-left">
                       <p class="image is-32x32">
-                        <img src="https://source.unsplash.com/random/64x64/?sig=302" />
+                        <img src="https://source.unsplash.com/random/64x64/?sig=302" alt="jsmith photo" />
                       </p>
                     </div>
                     <div class="media-content">
@@ -958,7 +960,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+                      <span class="has-text-grey-light"><span class="fa fa-comments" aria-hidden="true"></span> 13</span>
                     </div>
                   </div>
                 </div>
@@ -968,7 +970,7 @@
                   <div class="media">
                     <div class="media-left">
                       <p class="image is-32x32">
-                        <img src="https://source.unsplash.com/random/64x64/?sig=303" />
+                        <img src="https://source.unsplash.com/random/64x64/?sig=303" alt="brown photo/>
                       </p>
                     </div>
                     <div class="media-content">
@@ -980,7 +982,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                      <span class="has-text-grey-light"><span class="fa fa-comments" aria-hidden="true"></span> 2</span>
                     </div>
                   </div>
                 </div>
@@ -992,7 +994,7 @@
                   <div class="media">
                     <div class="media-left">
                       <p class="image is-32x32">
-                        <img src="https://source.unsplash.com/random/64x64/?sig=304" />
+                        <img src="https://source.unsplash.com/random/64x64/?sig=304" alt="hamburgler photo" />
                       </p>
                     </div>
                     <div class="media-content">
@@ -1004,7 +1006,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                      <span class="has-text-grey-light"><span class="fa fa-comments" aria-hidden="true"></span> 2</span>
                     </div>
                   </div>
                 </div>
@@ -1014,7 +1016,7 @@
                   <div class="media">
                     <div class="media-left">
                       <p class="image is-32x32">
-                        <img src="https://source.unsplash.com/random/64x64/?sig=305" />
+                        <img src="https://source.unsplash.com/random/64x64/?sig=305" alt="rapper photo" />
                       </p>
                     </div>
                     <div class="media-content">
@@ -1026,7 +1028,7 @@
                       </div>
                     </div>
                     <div class="media-right">
-                      <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                      <span class="has-text-grey-light"><span class="fa fa-comments" aria-hidden="true"></span> 2</span>
                     </div>
                   </div>
                 </div>
@@ -1036,7 +1038,7 @@
         </div>
       </section>
 
-      <section class="section has-background-light" id="contacts">
+      <section class="section has-background-light" id="contacts" aria-labelledby="contact-us-title">
         <div class="container">
           <div class="section-heading has-text-centered">
             <h2 class="title is-2" id="contact-us-title">Contact us</h2>
@@ -1057,10 +1059,10 @@
                 <div class="control has-icons-left has-icons-right">
                   <input class="input is-success" type="text" />
                   <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
+                    <span class="fas fa-user" aria-hidden="true"></span>
                   </span>
                   <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
+                    <span class="fas fa-check" aria-hidden="true"></span>
                   </span>
                 </div>
               </label>
@@ -1072,10 +1074,10 @@
                 <div class="control has-icons-left has-icons-right">
                   <input class="input is-danger" type="email" placeholder="Email input" value="hello@" />
                   <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
+                    <span class="fas fa-envelope" aria-hidden="true"></span>
                   </span>
                   <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
+                    <span class="fas fa-exclamation-triangle" aria-hidden="true"></span>
                   </span>
                 </div>
               </label>
@@ -1136,6 +1138,64 @@
           </form>
         </div>
       </section>
+      <div id="modal-card" class="modal modal-fx-3dSlit">
+        <div class="modal-background"></div>
+        <div class="modal-content is-tiny">
+          <div class="card">
+            <div class="card-image">
+              <div class="image is-4by3">
+                <img src="https://source.unsplash.com/random/?sig=2" alt="modal 1 photo" />
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <div class="image is-48x48">
+                    <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="modal 2 photo" />
+                  </div>
+                </div>
+                <div class="media-content">
+                  <div class="title is-4">Jane Doe</div>
+                  <div class="subtitle is-6">@jane_doe</div>
+                </div>
+              </div>
+              <div class="content">
+                Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't get
+                theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the pit
+                mummah Yessah, mummah muckle riyht on'ta her Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt
+                Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you
+                don't deserve the summah slower than molasses going uphill in January. Sgn'wahl shoggor hrii uaaah R'lyeh
+                uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd
+                Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah nogoth
+                phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg
+                nakadishtu chlirgh hupadgh tharanak h'gnaiih.
+                <a href="#">@testio</a>.
+                <a href="#">#css</a>
+                <a href="#">#responsive</a>
+                <br />
+                <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="Close modal"></button>
+      </div>
+  
+      <div id="modal-image1" class="modal modal-fx-3dSlit" role="dialog" aria-modal="true">
+        <div class="modal-background"></div>
+        <div class="modal-content is-huge is-image">
+          <img src="https://source.unsplash.com/random/?sig=1" alt="modal 3 photo" />
+        </div>
+        <button class="modal-close is-large" aria-label="Close modal"></button>
+      </div>
+  
+      <div id="modal-image2" class="modal modal-fx-superScaled">
+        <div class="modal-background"></div>
+        <div class="modal-content  is-image">
+          <img src="https://source.unsplash.com/random/?sig=3" alt="modal 4 photo" />
+        </div>
+        <button class="modal-close is-large" aria-label="Close modal"></button>
+      </div>
     </main>
     <!-- <div class="section">
     <div class="container">
@@ -1287,10 +1347,10 @@
 
         <div class="content has-text-centered">
           <div class="soc">
-            <a href="#" alt="github contacts"><i class="fab fa-github-alt fa-2x"></i></a>
-            <a href="#" alt="youtubr contacts"><i class="fab fa-youtube fa-2x"></i></a>
-            <a href="#" alt="facebook contacts"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#" alt="twitter contacts"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" aria-label="github contacts"><span class="fab fa-github-alt fa-2x" aria-hidden="true"></span></a>
+            <a href="#" aria-label="youtubr contacts"><span class="fab fa-youtube fa-2x" aria-hidden="true"></span></a>
+            <a href="#" aria-label="facebook contacts"><span class="fab fa-facebook fa-2x" aria-hidden="true"></span></a>
+            <a href="#" aria-label="twitter contacts"><span class="fab fa-twitter fa-2x" aria-hidden="true"></span></a>
           </div>
           <p>
             The source code is licensed
@@ -1299,66 +1359,6 @@
         </div>
       </div>
     </footer>
-
-    <div id="modal-card" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-tiny">
-        <div class="card">
-          <div class="card-image">
-            <div class="image is-4by3">
-              <img src="https://source.unsplash.com/random/?sig=2" />
-            </div>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <div class="image is-48x48">
-                  <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" />
-                </div>
-              </div>
-              <div class="media-content">
-                <div class="title is-4">Jane Doe</div>
-                <div class="subtitle is-6">@jane_doe</div>
-              </div>
-            </div>
-            <div class="content">
-              Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't get
-              theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the pit
-              mummah Yessah, mummah muckle riyht on'ta her Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt
-              Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you
-              don't deserve the summah slower than molasses going uphill in January. Sgn'wahl shoggor hrii uaaah R'lyeh
-              uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd
-              Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah nogoth
-              phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg
-              nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-              <a href="#">@testio</a>.
-              <a href="#">#css</a>
-              <a href="#">#responsive</a>
-              <br />
-              <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="modal-close is-large" aria-label="Close modal"></button>
-    </div>
-
-    <div id="modal-image1" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-huge is-image">
-        <img src="https://source.unsplash.com/random/?sig=1" />
-      </div>
-      <button class="modal-close is-large" aria-label="Close modal"></button>
-    </div>
-
-    <div id="modal-image2" class="modal modal-fx-superScaled">
-      <div class="modal-background"></div>
-      <div class="modal-content  is-image">
-        <img src="https://source.unsplash.com/random/?sig=3" />
-      </div>
-      <button class="modal-close is-large" aria-label="Close modal"></button>
-    </div>
-
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
     <script async src="js/custom.js"></script>
     <script async src="js/skip-link.js"></script>
