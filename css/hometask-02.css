@@ -5,7 +5,8 @@ a {
 .navbar .navbar-item a:focus,
 .navbar .navbar-item a.button:focus,
 .navbar .logo-link:focus,
-html body .topics-section .hero.is-info .tabs.is-boxed button:focus {
+html body .topics-section .hero.is-info .tabs.is-boxed button:focus,
+button.navbar-burger.burger:focus {
   outline: 0;
   -webkit-box-shadow: 0px 0px 1px 2px #ffff80;
   -moz-box-shadow: 0px 0px 1px 2px #ffff80;
@@ -182,4 +183,13 @@ nav.breadcrumb {
   height: auto;
   width: auto;
   clip: auto;
+}
+
+button.navbar-burger.burger {
+  background: transparent;
+  border: 0;
+}
+
+button.navbar-burger.burger span {
+  background-color: #fff;
 }
