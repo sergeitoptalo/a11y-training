@@ -50,7 +50,7 @@ html body .topics-section .hero.is-info .tabs.is-boxed ul li {
   padding-top: 2px;
 }
 
-html body .topics-section .hero.is-info .tabs.is-boxed .is-active button {
+html body .topics-section .hero.is-info .tabs.is-boxed button.is-active {
   color: #0a5485;
   background: #fff;
 }

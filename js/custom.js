@@ -7,32 +7,36 @@
   });
 })();
 
-document.querySelectorAll("#nav li").forEach(function(navEl) {
+document.querySelectorAll("#nav .tab-control").forEach(function(navEl) {
   navEl.onclick = function() {
     toggleTab(this.id, this.dataset.target);
   };
 });
 
 function toggleTab(selectedNav, targetId) {
-  var navEls = document.querySelectorAll("#nav li");
+  var navEls = document.querySelectorAll("#nav .tab-control");
 
   navEls.forEach(function(navEl) {
     if (navEl.id == selectedNav) {
       navEl.classList.add("is-active");
+      navEl.setAttribute('aria-selected', 'true');
     } else {
       if (navEl.classList.contains("is-active")) {
         navEl.classList.remove("is-active");
       }
+      navEl.setAttribute('aria-selected', 'false');
     }
   });
 
-  var tabs = document.querySelectorAll(".tab-pane");
+  var tabsPanels = document.querySelectorAll(".tab-pane");
 
-  tabs.forEach(function(tab) {
-    if (tab.id == targetId) {
-      tab.style.display = "block";
+  tabsPanels.forEach(function(tabPanel) {
+    if (tabPanel.id == targetId) {
+      tabPanel.style.display = "block";
+      tabPanel.setAttribute('aria-expanded', 'true');
     } else {
-      tab.style.display = "none";
+      tabPanel.style.display = "none";
+      tabPanel.setAttribute('aria-expanded', 'false');
     }
   });
 }
