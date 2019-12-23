@@ -1,6 +1,6 @@
 (function() {
     const updatesScreen = document.querySelector('.updates-screen');
-    let message = 'a new event has been added to the upcoming events section';
+    let message = 'A new event has been added to the upcoming events section';
 
     setInterval(() => {
         updatesScreen.innerHTML = message;
