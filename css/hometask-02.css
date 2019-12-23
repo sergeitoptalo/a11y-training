@@ -194,10 +194,15 @@ button.navbar-burger.burger span {
   background-color: #fff;
 }
 
-#updates-screen {
+.updates-screen {
+  background: rgb(255, 225, 92);
   position: fixed;
+  padding: 10px;
   top: 0;
   right: 0;
-/*   height: 30px;
-  width: 50px; */
+  display: none;
+}
+
+.updates-screen.is-active {
+  display: block;
 }

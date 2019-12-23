@@ -1,8 +1,12 @@
 (function() {
-    const updatesScreen = document.querySelector('#updates-screen');
-    let counter = 0;
+    const updatesScreen = document.querySelector('.updates-screen');
+    let message = 'a new event has been added to the upcoming events section';
+
     setInterval(() => {
-        counter += 1;
-        updatesScreen.innerHTML = counter;
-    }, 1000);
+        updatesScreen.innerHTML = message;
+        updatesScreen.classList.add('is-active');
+        setTimeout(() => {
+            updatesScreen.classList.remove('is-active');
+        }, 7000);
+    }, 20000);
 })()
