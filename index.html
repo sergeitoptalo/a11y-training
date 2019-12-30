@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta
-      http-equiv="X-UA-Compatible"
-      name="viewport"
-      content="ie=edge, width=device-width, initial-scale=1.0, user-scalable=1.0"
+    <meta name="viewport" http-equiv="X-UA-Compatible" content="IE=edge, width=device-width, initial-scale=1.0, user-scalable=1.0"
     />
     <title>Web Accessibility 2019 Q1 BY</title>
     <link rel="stylesheet prefetch" href="css/hometask-02.css" />
@@ -22,7 +19,7 @@
         <div class="skip-link-panel" id="skip-link-panel">
           <ul role="menu">
             <li>
-              <a href="#upcoming-events">About us</a>
+              <a href="#about-us">About us</a>
             </li>
             <li>
               <a href="#key-features">Key features</a>
@@ -32,6 +29,9 @@
             </li>
             <li>
               <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#upcoming-events">Upcoming events</a>
             </li>
             <li>
               <a href="#photos">Photos from past events</a>
@@ -70,7 +70,7 @@
                     <span>Home</span>
                   </a>
                 </span>
-                <span class="navbar-item administration-menu-container">
+                <div class="navbar-item administration-menu-container">
                   <button class="button is-white is-outlined administration-menu-trigger" aria-expanded="false" aria-haspopup="true">
                     <span class="icon">
                       <span class="fab fa-superpowers" aria-hidden="true"></span>
@@ -78,24 +78,24 @@
                     <span>Administration</span>
                   </button>
                   <ul class="administration-menu" role="menu">
-                    <li role="none">
+                    <li role="presentation">
                       <a href="1" role="menuitem" tabindex="-1" class="adm-menu-item">Administration</a>
                     </li>
-                    <li role="none">
+                    <li role="presentation">
                       <a href="2" role="menuitem" tabindex="-1" class="adm-menu-item">Team Settings</a>
                     </li>
-                    <li role="none">
+                    <li role="presentation">
                       <a href="3" role="menuitem" tabindex="-1" class="adm-menu-item">Manage Your Team</a>
                     </li>
-                    <li role="none">
+                    <li role="presentation">
                       <a href="4" role="menuitem" tabindex="-1" class="adm-menu-item">Invitations</a>
                     </li>
                     <li role="separator" class="separator"></li>
-                    <li role="none">
+                    <li role="presentation">
                       <a href="5" role="menuitem" tabindex="-1" class="adm-menu-item">Authentication</a>
                     </li>
                   </ul>
-                </span>
+                </div>
                 <span class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
                     <span class="icon">
@@ -155,7 +155,7 @@
           </li>
         </ol>
       </nav>
-      <section class="section about-us" id="about" aria-labelledby="about-us-title" id="about-us">
+      <section class="section about-us" aria-labelledby="about-us-title" id="about-us">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2" id="about-us-title">About Us</h2>
           <div class="subtitle is-5">We of all trades, master of "some"</div>
@@ -424,7 +424,7 @@
         </div>
 
         <div class="tab-content container">
-          <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel" aria-expanded="true" aria-labelledby="pictures-tab-title">
+          <div class="tab-pane is-active level" id="pane-1" role="tabpanel" aria-expanded="true" aria-labelledby="pictures-tab-title">
             <div class="container">
               <div class="columns features">
                 <div class="column is-4">
@@ -575,12 +575,7 @@
               <div class="column is-three-quarters">
                 <div class="title has-text-centered">Inspired video</div>
                 <div class="embed-container image">
-                  <iframe
-                    src="https://player.vimeo.com/video/261794608"
-                    webkitAllowFullScreen
-                    mozallowfullscreen
-                    allowfullscreen
-                  ></iframe>
+                  <iframe src="https://player.vimeo.com/video/261794608" webkitAllowFullScreen mozallowfullscreen allowfullscreen />
                 </div>
               </div>
             </div>
@@ -941,7 +936,7 @@
                   <div class="media">
                     <div class="media-left">
                       <p class="image is-32x32">
-                        <img src="https://source.unsplash.com/random/64x64/?sig=301" alt="red photo/>
+                        <img src="https://source.unsplash.com/random/64x64/?sig=301" alt="red photo" />
                       </p>
                     </div>
                     <div class="media-content">

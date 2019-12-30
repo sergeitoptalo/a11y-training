@@ -213,6 +213,10 @@ button.navbar-burger.burger span {
   position: relative;
 }
 
+.administration-menu-container {
+  display: inline;
+}
+
 nav .administration-menu {
   display: none;
   position: absolute;
