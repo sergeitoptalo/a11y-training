@@ -3,9 +3,8 @@
   <head>
     <meta
       http-equiv="X-UA-Compatible"
-      content="ie=edge"
       name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=1.0"
+      content="ie=edge, width=device-width, initial-scale=1.0, user-scalable=1.0"
     />
     <title>Web Accessibility 2019 Q1 BY</title>
     <link rel="stylesheet prefetch" href="css/hometask-02.css" />
@@ -54,7 +53,7 @@
               <a href="#" class="navbar-item logo-link">
                 <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" alt="EPAM logo" />
               </a>
-              <button class="navbar-burger burger" data-target="navbarMenu" aria-haspopup="true" aria-owns="navbarMenu">
+              <button class="navbar-burger burger" data-target="navbarMenu" aria-haspopup="true" aria-owns="navbarMenu" aria-label="expand main navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -212,10 +211,10 @@
             </li>
             <li>Vivamus maximus ultricies pulvinar.</li>
           </ol>
-          <div class="blockquote">
+          <blockquote class="blockquote">
             Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus
             sit amet turpis.
-          </div>
+          </blockquote>
           <p>
             Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et
             <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.
@@ -1099,7 +1098,7 @@
                   </span>
                 </div>
               </label>
-              <p class="help is-danger" role="alert" aria-live="assertive" aria-atomic="true">This email is invalid</p>
+              <p class="help is-danger" role="alert">This email is invalid</p>
             </div>
 
             <div class="field">
@@ -1126,20 +1125,20 @@
             <div class="field">
               <div class="control">
                 <label class="checkbox">
-                  <input type="checkbox" />
-                  I agree to the <a href="#">terms and conditions</a>
+                  <input type="checkbox" aria-labelledby="agreement" />
+                  <span id="agreement">I agree to the <a href="#">terms and conditions</a></span>
                 </label>
               </div>
             </div>
 
             <div class="field">
               <div class="control">
-                <label class="radio">
-                  <input type="radio" name="yes" />
+                <input id="yes" type="radio" role="radio" name="yes" value="yes" aria-labelledby="yes-label" />
+                <label class="radio" id="yes-label" for="yes">
                   Yes
                 </label>
-                <label class="radio">
-                  <input type="radio" name="no" />
+                <input id="no" type="radio" name="no" value="no" aria-labelledby="no-label" />
+                <label class="radio" id="no-label" for="no">
                   No
                 </label>
               </div>
