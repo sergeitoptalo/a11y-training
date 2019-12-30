@@ -4,6 +4,7 @@ a {
 
 .navbar .navbar-item a:focus,
 .navbar .navbar-item a.button:focus,
+.navbar .navbar-item button.button:focus,
 .navbar .logo-link:focus,
 html body .topics-section .hero.is-info .tabs.is-boxed button:focus,
 button.navbar-burger.burger:focus {
@@ -28,7 +29,8 @@ button.navbar-burger.burger:focus {
 .container form a:focus,
 .container form button.button:focus,
 .container form button.button.is-link:focus,
-.footer .container a:focus {
+.footer .container a:focus,
+nav .administration-menu-container .administration-menu a:focus {
   outline: 0;
   -webkit-box-shadow: 0px 0px 1px 2px #003b75;
   -moz-box-shadow: 0px 0px 1px 2px #003b75;
@@ -205,4 +207,49 @@ button.navbar-burger.burger span {
 
 .updates-screen.is-active {
   display: block;
+}
+
+.navbar .navbar-item {
+  position: relative;
+}
+
+nav .administration-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 12px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+nav .administration-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 12px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+nav .administration-menu li {
+  padding: 10px;
+}
+
+nav .administration-menu a {
+  color: #000;
+  text-decoration: none;
+  padding: 5px;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+}
+
+nav .administration-menu-container:hover > .administration-menu,
+nav .administration-menu.expanded {
+  display: block;
+}
+
+.separator {
+  border-bottom: 1px solid #212121;
 }

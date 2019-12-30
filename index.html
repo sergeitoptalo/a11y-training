@@ -43,7 +43,7 @@
             <li>
               <a href="#contacts">Contact us</a>
             </li>
-          </ulmenu>
+          </ul>
         </div>
       </section>
       
@@ -71,13 +71,31 @@
                     <span>Home</span>
                   </a>
                 </span>
-                <span class="navbar-item">
-                  <a href="#" class="button is-white is-outlined">
+                <span class="navbar-item administration-menu-container">
+                  <button class="button is-white is-outlined administration-menu-trigger" aria-expanded="false" aria-haspopup="true">
                     <span class="icon">
                       <span class="fab fa-superpowers" aria-hidden="true"></span>
                     </span>
-                    <span>Examples</span>
-                  </a>
+                    <span>Administration</span>
+                  </button>
+                  <ul class="administration-menu" role="menu">
+                    <li role="none">
+                      <a href="1" role="menuitem" tabindex="-1" class="adm-menu-item">Administration</a>
+                    </li>
+                    <li role="none">
+                      <a href="2" role="menuitem" tabindex="-1" class="adm-menu-item">Team Settings</a>
+                    </li>
+                    <li role="none">
+                      <a href="3" role="menuitem" tabindex="-1" class="adm-menu-item">Manage Your Team</a>
+                    </li>
+                    <li role="none">
+                      <a href="4" role="menuitem" tabindex="-1" class="adm-menu-item">Invitations</a>
+                    </li>
+                    <li role="separator" class="separator"></li>
+                    <li role="none">
+                      <a href="5" role="menuitem" tabindex="-1" class="adm-menu-item">Authentication</a>
+                    </li>
+                  </ul>
                 </span>
                 <span class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
@@ -1364,5 +1382,6 @@
     <script async src="js/custom.js"></script>
     <script async src="js/skip-link.js"></script>
     <script async src="js/aria-live.js"></script>
+    <script async src="js/navigation-menu.js"></script>
   </body>
 </html>

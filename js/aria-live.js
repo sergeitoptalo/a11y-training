@@ -8,5 +8,5 @@
         setTimeout(() => {
             updatesScreen.classList.remove('is-active');
         }, 7000);
-    }, 20000);
+    }, 60000);
 })()
